@@ -23,9 +23,9 @@
   "author": "Farishta Haider <farishta.haider@gmail.com> (http://www.farishtahaider.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LaFrish/reactFitness/issues"
+    "url": "https://lafrish.github.io/reactFitness/issues"
   },
-  "homepage": "http://LaFrish.github.io/reactFitness",
+  "homepage": "https://lafrish.github.io/reactFitness/",
 
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
