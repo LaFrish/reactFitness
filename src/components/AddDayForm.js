@@ -70,16 +70,14 @@ export const AddDayForm = ({ workout,
 				   defaultValue={date}
 				   ref={input => _date = input}/>
 
-			<div>
+			<div className="row">
 				<input id="cardio"
 					   type="checkbox"
 					   defaultChecked={cardio}
 					   ref="cardio"
 					   ref={input => _cardio = input}/>
 				<label htmlFor="cardio">Cardio Day</label>
-			</div>
 
-			<div>
 				<input id="strength"
 					   type="checkbox"
 					   defaultChecked={strength}

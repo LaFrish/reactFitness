@@ -5,17 +5,17 @@ import { PropTypes } from 'react'
 
 export const FitnessDayRow = ({workout, date,
 							cardio, strength}) => (
-	<tr>
-		<td>
+	<tr className="fitRow">
+		<td className="text">
 			{date}
 		</td>
-		<td>
+		<td className="text">
 			{workout}
 		</td>
-		<td>
+		<td className="icon">
 			{(cardio) ? <Weight /> : null}
 		</td>
-		<td>
+		<td className="icon">
 			{(strength) ? <Heart /> : null}
 		</td>
 	</tr>

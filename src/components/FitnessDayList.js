@@ -13,36 +13,34 @@ export const FitnessDayList = ({days, filter}) => {
 
   return (
   	<div className="fitness-day-list">
-	<table>
-		<thead>
-			<tr>
-				<th>Date</th>
-				<th>Workout</th>
-				<th>Cardio</th>
-				<th>Strength Training</th>
-			</tr>
-			<tr>
-				<td colSpan={4}>
-					<Link to="/list-days">
-						All Days
-					</Link>
-					<Link to="/list-days/cardio">
-						Cardio Days
-					</Link>
-					<Link to="/list-days/strength">
-						Strength Training Days
-					</Link>
-				</td>
-			</tr>
-		</thead>
-		<tbody>
-			{filteredDays.map((day, i) =>
-				<FitnessDayRow key={i}
-						   {...day}/>
-				)}
-		</tbody>
+      <div className="row">
+        <Link to="/list-days">
+          All Days
+        </Link>
+        <Link to="/list-days/cardio">
+          Cardio Days
+        </Link>
+        <Link to="/list-days/strength">
+          Strength Training Days
+        </Link>
+      </div>
+  	<table>
+  		<thead>
+        <tr>
+          <th>Date</th>
+          <th>Workout</th>
+          <th>Cardio</th>
+          <th>Strength Training</th>
+        </tr>
+  		</thead>
+  		<tbody>
+  			{filteredDays.map((day, i) =>
+  				<FitnessDayRow key={i}
+  						   {...day}/>
+  				)}
+  		</tbody>
 
-	</table>
+  	</table>
 	</div>
 )
 }

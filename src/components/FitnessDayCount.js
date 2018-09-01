@@ -1,12 +1,11 @@
-import '../stylesheets/style.scss'
+
 import Calendar from 'react-icons/lib/fa/calendar'
 import Weight from 'react-icons/lib/md/fitness-center'
 import Heart from 'react-icons/lib/fa/heartbeat'
 import { PropTypes } from 'react'
 
 
-export const FitnessDayCount = ({total=70, cardio=20,
-							strength=10}) => (
+export const FitnessDayCount = ({total=70, cardio=20, strength=10}) => (
 
 		<div className="fitness-day-count">
 			<h1>Fitness Tracker</h1>

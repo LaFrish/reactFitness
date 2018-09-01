@@ -9,19 +9,19 @@ export class App extends Component {
 		super(props)
 		this.state = {
 			allFitnessDays: [
-			{
-				workout: "Running",
-				date: "01/01/2018",
-				cardio: true,
-				strength: false
-			},
-			{
-				workout: "Weight Lifting",
-				date: "01/02/2018",
-				cardio: false,
-				strength: true
-			}
-		]
+				{
+					workout: "Running",
+					date: "01/01/2018",
+					cardio: true,
+					strength: false
+				},
+				{
+					workout: "Weight Lifting",
+					date: "01/02/2018",
+					cardio: false,
+					strength: true
+				}
+			]
 		}
 		this.addDay = this.addDay.bind(this)
 	}

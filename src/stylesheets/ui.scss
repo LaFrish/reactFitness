@@ -1,42 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-
-$snow-white: #d3d5e3;
-$font: 'Montserrat', sans-serif;
-
-html,
-body,
-div#react-container,
-div.app {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: $font;
-  text-align: center;
-}
-
-h1, label {
-  margin: 0
-}
-
-div.app {
- // background-image:url('./dist/assets/img/background.jpg');
- background-image:url('http://localhost:3000/assets/img/background.jpg');
- background-size: cover;
- background-position: center;
-}
-
-div.whoops-404 {
-  background-color: white;
-  font-size: 2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
+@import "global";
 
 nav.menu {
-  background-color: black;
+  background-color: #000;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -48,73 +13,14 @@ nav.menu {
 
   a {
     color: $snow-white;
-  }
-}
-
-div.goal-progress {
-
-  width: 95%;
-  margin: 0 2.5%;
-  font-size: 2em;
-  position: absolute;
-  bottom: 5em;
-  display: flex;
-  font-family: $font;
-  justify-content: space-between;
-  text-shadow: 2px 2px 10px $snow-white;
-
-  progress {
-    flex-basis: 66%;
-    background-color: black;
-    height: .5em;
-    position: relative;
-    top: 17px;
-  }
-
-  input {
-    background: none;
-    border: none;
-    position: relative;
-    width: 2em;
-    font-size: 1em;
-    padding: 0;
-    left: 9px;
-    outline: none;
-    text-shadow: 2px 2px 10px $snow-white;
-  }
-
-  button {
-
-    font-size: .75em;
-    padding: .25em;
-    background-color: green;
-    color: white;
-
-    &:disabled {
-      background-color: lightgrey;
-      color: #bababa;
+    &:hover{
+      color: $purple;
     }
-
-  }
-
-}
-
-progress::-webkit-progress-bar {
-  background-color: black;
-}
-
-progress::-webkit-progress-value {
-  background-color: #8a2a2d;
-}
-
-@-moz-document url-prefix() {
-  progress {
-    display: none;
   }
 }
 
 div.fitness-day-count {
-  color: white;
+  color: #fff;
   display: flex;
   flex-wrap: wrap;
   font-size: 3em;
@@ -124,7 +30,7 @@ div.fitness-day-count {
     display: block;
     font-family: $font;
     font-size: 70px;
-    color: white;
+    color: #fff;
     // margin-left: 25%;
     margin-top: 25px;
     text-align: center;
@@ -142,7 +48,7 @@ div.fitness-day-count {
 
       span, svg {
         height: 200px;
-        color: white;
+        color: #fff;
       }
     }
 
@@ -151,7 +57,7 @@ div.fitness-day-count {
     }
 
     span, svg {
-      // background-color: white;
+      // background-color: #fff;
       height: 100px;
       display: flex;
       justify-content: center;
@@ -167,37 +73,75 @@ div.fitness-day-count {
         font-size: .5em;
         padding-right: 15px;
       }
-
     }
-
   }
-
-
 }
 
 div.fitness-day-list {
-
-  height: calc(100% - 13em);
+  width: 1000px;
+  margin-left: 10%;
   overflow-y: scroll;
-
+  .row{
+    width: 100%;
+    height: 60px;
+    display: block;
+    margin-top: 20px;
+    a {
+      display: inline-block;
+      padding: 10px;
+      font-size: 1.25em;
+      background-color: $snow-white;
+      border-radius: 3px;
+      color: $purple;
+      margin: 15px;
+      text-decoration: none;
+      border: 2px solid darkgray;
+      &:hover{
+        background-color: #fff;
+        border: 2px solid $snow-white;
+      }
+    }
+  }
   table {
+    display: table;
+    margin-top: 25px;
     caption {
-      background-color: white;
-      background-color: rgba(255,255,255, .9);
       color: #8f2e32;
     }
     width: 100%;
-    background-color: rgba(255,255,255, .9);
+    background-color: #000;
     font-family: $font;
     font-size: 1.5em;
     text-align: center;
-
-    td {
-      padding: .2em;
+    thead{
+      tr{
+        border: 1px solid #000;
+        th{
+          height: 40px;
+          background-color: #000;
+          color: #fff;
+        }
+        td {
+          height: 50px;
+        }
+      }
     }
-
-    a {
-      margin: 15px;
+    tbody{
+      .fitRow{
+          height: 40px;
+          background-color: #fff;
+          &:hover{
+            background-color: $snow-white;
+            border: 1px solid #fff;
+            color: $purple;
+          }
+          td.text{
+          font-size: .75em;
+          }
+          td.icon{
+            font-size: 1em;
+        }
+      }
     }
   }
 }
@@ -211,8 +155,8 @@ div.show-errors {
     width: 100%;
     text-align: center;
     top: 0;
-    background-color: red;
-    color: white;
+    // background-color: red;
+    color: #fff;
     font-family: $font;
     display: flex;
     justify-content: space-between;
@@ -230,45 +174,61 @@ form.add-day-form {
   font-family: $font;
   width: 70%;
   margin-left: 15%;
+  padding-top: 25px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: stretch;
   height: calc(100% - 12em);
 
-  >label,
-  div {
-    margin: 1em 0;
-
-  }
-
   label {
-    color: white;
+    color: #fff;
     font-size: 1.5em;
-    // text-shadow: 3px 3px 10px $snow-white;
-    height: 10px;
+    text-align: left;
+    height: 1px;
     font-weight: bold;
   }
 
   input[type="text"],
   input[type="date"] {
+    font: $font;
     font-size: 1.5em;
     padding: .25em;
     border-radius: .2em;
     outline: none;
     min-height: 36px;
+    float: left;
+    width: 100%;
+    color: $purple;
   }
-
+.row{
+  margin-top: 10px;
+  display: inline-block;
+  label {
+    // margin-top:40px;
+    // margin-bottom: 20px;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: left;
+    height: 1px;
+    font-weight: bold;
+    vertical-align: middle;
+    margin-right: 50px;
+  }
   input[type="checkbox"] {
     transform: scale(2);
-    margin: 0;
+    margin: 5px;
     padding: 0;
-    margin-right: 2em;
+    margin-right: 20px;
+    padding-right: 20px;
+    vertical-align: middle;
   }
+}
 
   div>label {
     position: relative;
     top: 2px;
+
   }
 
   .autocomplete {
@@ -291,21 +251,16 @@ form.add-day-form {
       width: auto;
       height: auto;
       max-height: 200px;
-      background-color: white;
+      background-color: #fff;
       overflow-y: scroll;
       z-index: 3;
-
-
-
       p {
         padding: 1em;
         margin: 0;
-
         &:hover {
           background-color: yellow;
         }
       }
-
       &:empty {
         display: none;
       }
@@ -313,13 +268,20 @@ form.add-day-form {
   }
 
   button {
-    margin: auto;
     width: 100%;
     font-size: 2em;
-    background-color: white;
+    height: 50px;
+    border-radius: 3px;
+    background-color: #fff;
     font-weight: bold;
-    color: black;
-    padding: 5px;
+    color: $purple;
+    border: 2px solid $snow-white;
+    // padding: 5px;
+    &:hover{
+      background-color: $snow-white;
+      border: 2px solid gray;
+
+    }
   }
 
 }
