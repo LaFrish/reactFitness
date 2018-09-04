@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start":      "./node_modules/.bin/webpack-dev-server",
-    "build": "./node_modules/.bin/webpack-dev-server",
-    "predeploy":  "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "./node_modules/.bin/webpack-dev-server"
   },
   "repository": {
     "type": "git",

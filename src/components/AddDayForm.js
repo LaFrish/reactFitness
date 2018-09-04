@@ -62,6 +62,7 @@ export const AddDayForm = ({ workout,
 
 			<label htmlFor="workout">Workout Name</label>
 			<Autocomplete options={goldWorkouts}
+								alt="Enter Workout Name"
 				   		  ref={input => _workout = input}/>
 
 			<label htmlFor="date">Date</label>
@@ -69,12 +70,14 @@ export const AddDayForm = ({ workout,
 				   type="date"
 				   required
 				   defaultValue={date}
+					 alt="Enter Date"
 				   ref={input => _date = input}/>
 
 			<div className="row">
 				<input id="cardio"
 					   type="checkbox"
 					   defaultChecked={cardio}
+						 alt="Check if Cardio"
 					   ref="cardio"
 					   ref={input => _cardio = input}/>
 				<label htmlFor="cardio">Cardio Day</label>
@@ -82,13 +85,14 @@ export const AddDayForm = ({ workout,
 				<input id="strength"
 					   type="checkbox"
 					   defaultChecked={strength}
+						 alt="Check if Strength Training"
 					   ref="strength"
 					   ref={input => _strength = input}/>
 				<label htmlFor="strength">
 					Strength Training Day
 				</label>
 			</div>
-			<button>Add Day</button>
+			<button alt="Submit">Add Day</button>
 		</form>
 	)
 }

@@ -3,6 +3,7 @@ App made from scratch - without `create-react-app`
 - Workout Counter
 - Breakdown by Cardio and Strength Training days
 - Ability to Add Workout days
+- Workout suggestions given
 - List of Workouts
 - Filter List by Cardio and Strength Training days
 
