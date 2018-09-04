@@ -10,7 +10,6 @@ nav.menu {
   padding: .5em;
   display: flex;
   justify-content: space-around;
-
   a {
     color: $snow-white;
     &:hover{
@@ -30,9 +29,7 @@ div.fitness-day-count {
     display: block;
     font-family: $font;
     font-size: 70px;
-    // background-color: #fff;
     color: #fff;
-    // opacity: .5;
     text-outline: 1px solid black;
     padding-top: 25px;
     text-align: center;
@@ -41,12 +38,10 @@ div.fitness-day-count {
   p{
     font-size: 16px;
   }
-
   > div {
     display: flex;
     justify-content: center;
     align-items: center;
-
     &.total-days {
       flex-basis: 100%;
       font-size: 2em;
@@ -56,24 +51,20 @@ div.fitness-day-count {
         color:#000;
       }
     }
-
-    &:not(.total-days) {
-      flex-basis: 50%;
-    }
-
-    span, svg {
-      background-color: #fff;
-      color:#000;
-      height: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+      &:not(.total-days) {
+        flex-basis: 50%;
+      }
+      span, svg {
+        background-color: #fff;
+        color:#000;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       &:first-child {
         border-radius: 25px 0 0 25px;
         padding-left: 15px;
       }
-
       &:last-child {
         border-radius: 0 25px 25px 0;
         font-size: .5em;
@@ -153,15 +144,12 @@ div.fitness-day-list {
 }
 
 div.show-errors {
-
   width: 100%;
-
   div {
     position: absolute;
     width: 100%;
     text-align: center;
     top: 0;
-    // background-color: red;
     color: #fff;
     font-family: $font;
     display: flex;
@@ -186,7 +174,6 @@ form.add-day-form {
   justify-content: space-around;
   align-items: stretch;
   height: calc(100% - 12em);
-
   label {
     color: #fff;
     font-size: 1.5em;
@@ -194,7 +181,6 @@ form.add-day-form {
     height: 1px;
     font-weight: bold;
   }
-
   input[type="text"],
   input[type="date"] {
     font: $font;
@@ -207,49 +193,42 @@ form.add-day-form {
     width: 100%;
     color: $purple;
   }
-.row{
-  margin-top: 10px;
-  display: inline-block;
-  label {
-    // margin-top:40px;
-    // margin-bottom: 20px;
-    color: #fff;
-    font-size: 1.5em;
-    text-align: left;
-    height: 1px;
-    font-weight: bold;
-    vertical-align: middle;
-    margin-right: 50px;
+  .row{
+    margin-top: 10px;
+    display: inline-block;
+    label {
+      color: #fff;
+      font-size: 1.5em;
+      text-align: left;
+      height: 1px;
+      font-weight: bold;
+      vertical-align: middle;
+      margin-right: 50px;
+    }
+    input[type="checkbox"] {
+      transform: scale(2);
+      margin: 5px;
+      padding: 0;
+      margin-right: 20px;
+      padding-right: 20px;
+      vertical-align: middle;
+    }
   }
-  input[type="checkbox"] {
-    transform: scale(2);
-    margin: 5px;
-    padding: 0;
-    margin-right: 20px;
-    padding-right: 20px;
-    vertical-align: middle;
-  }
-}
-
   div>label {
     position: relative;
     top: 2px;
-
   }
-
   .autocomplete {
     position: relative;
     input {
       width: calc(100% - .75em);
     }
-
     span {
       position: absolute;
       top: 5px;
       right: 10px;
       font-size: 2em;
     }
-
     .suggestions {
       position: absolute;
       top: 2em;
@@ -272,7 +251,6 @@ form.add-day-form {
       }
     }
   }
-
   button {
     width: 100%;
     font-size: 2em;
@@ -282,12 +260,9 @@ form.add-day-form {
     font-weight: bold;
     color: $purple;
     border: 2px solid $snow-white;
-    // padding: 5px;
     &:hover{
       background-color: $snow-white;
       border: 2px solid gray;
-
     }
   }
-
 }
