@@ -30,11 +30,16 @@ div.fitness-day-count {
     display: block;
     font-family: $font;
     font-size: 70px;
+    // background-color: #fff;
     color: #fff;
-    // margin-left: 25%;
-    margin-top: 25px;
+    // opacity: .5;
+    text-outline: 1px solid black;
+    padding-top: 25px;
     text-align: center;
     justify-content: center;
+  }
+  p{
+    font-size: 16px;
   }
 
   > div {
@@ -45,10 +50,10 @@ div.fitness-day-count {
     &.total-days {
       flex-basis: 100%;
       font-size: 2em;
-
       span, svg {
         height: 200px;
-        color: #fff;
+        background: #fff;
+        color:#000;
       }
     }
 
@@ -57,7 +62,8 @@ div.fitness-day-count {
     }
 
     span, svg {
-      // background-color: #fff;
+      background-color: #fff;
+      color:#000;
       height: 100px;
       display: flex;
       justify-content: center;
@@ -285,3 +291,4 @@ form.add-day-form {
   }
 
 }
+		// <p>Total Workout Days</p>
