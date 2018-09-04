@@ -20,6 +20,12 @@ export class App extends Component {
 					date: "01/02/2018",
 					cardio: false,
 					strength: true
+				},
+				{
+					workout: "BodyPump",
+					date: "01/03/2018",
+					cardio: true,
+					strength: true
 				}
 			]
 		}

@@ -1,4 +1,9 @@
 # reactFitness
+Workout Counter
+Breakdown by Cardio and Strength Training days
+Ability to Add Workout days
+List of Workouts 
+Filter List by Cardio and Strength Training days
 
 ## To Start
 - run `npm install`

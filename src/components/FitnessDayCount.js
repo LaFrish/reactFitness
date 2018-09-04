@@ -9,9 +9,8 @@ export const FitnessDayCount = ({total=70, cardio=20, strength=10}) => (
 		<div className="fitness-day-count">
 			<h1>Fitness Tracker</h1>
 			<div className="total-days">
-
 				<span>{total}</span>
-					<Calendar />
+
 				<span>days</span>
 			</div>
 			<div className="cardio-days">
