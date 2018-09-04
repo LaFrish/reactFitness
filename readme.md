@@ -13,5 +13,5 @@ App made from scratch - without `create-react-app`
 You can access the app at http://localhost:3000  
 
 ## Next Steps
-Adding redux to reactFitness
-Deploy both apps
+- Adding redux to reactFitness
+- Deploy both apps
