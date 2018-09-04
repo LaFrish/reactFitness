@@ -96,14 +96,14 @@ div.fitness-day-list {
       display: inline-block;
       padding: 10px;
       font-size: 1.25em;
-      background-color: $snow-white;
+      background-color: #fff;
       border-radius: 3px;
       color: $purple;
       margin: 15px;
       text-decoration: none;
       border: 2px solid darkgray;
       &:hover{
-        background-color: #fff;
+        background-color: $snow-white;
         border: 2px solid $snow-white;
       }
     }
@@ -291,4 +291,3 @@ form.add-day-form {
   }
 
 }
-		// <p>Total Workout Days</p>

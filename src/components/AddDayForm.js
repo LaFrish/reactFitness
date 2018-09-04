@@ -2,7 +2,8 @@ import { PropTypes, Component } from 'react'
 
 const goldWorkouts = [
 	"Spinning",
-	"BodyPump"
+	"BodyPump",
+	"Running"
 ]
 
 class Autocomplete extends Component {
@@ -95,8 +96,8 @@ export const AddDayForm = ({ workout,
 AddDayForm.defaultProps = {
 	workout: "BodyPump",
 	date: "01-01-2018",
-	cardio: true,
-	strength: false
+	cardio: false,
+	strength: true
 }
 
 
